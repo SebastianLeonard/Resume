@@ -1,0 +1,83 @@
+/* Global Styles */
+* {
+    color: white;
+}
+
+body {
+    background-color: #0D1821;
+}
+
+a {
+    color: #1650cc;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Profile */
+
+h1 {
+    color: #9C50F8;
+    font-size: 100px;
+}
+
+h2 {
+    color: #D0ABA0;
+}
+
+.tagline {
+    color: #9C50F8;
+}
+
+/* Projects */
+ .projects {
+    background-color: #B4EDD2;
+    padding-bottom: 15px;
+ }
+
+ .projects p, .projects img {
+    color: #424242;
+ }
+
+ .projects h3 {
+    color: #9C50F8;
+ }
+
+ .projects a {
+
+ }
+ 
+ .projects .btn {
+    color: azure;
+    background-color: #9C50F8;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+ }
+
+ .projects .btn:hover {
+    background-color: rgba(156, 80, 248, 0.8);
+ }
+
+
+/* Work Experience */
+
+.work {
+    background-color: #424242;
+}
+
+/* Education */
+
+/* Contact Info */
+footer {
+    background-color: #D0ABA0;
+}
+
+.contact h2 {
+    color: #0D1821;
+}
+
+.contact li::marker {
+    color: #424242;
+}
