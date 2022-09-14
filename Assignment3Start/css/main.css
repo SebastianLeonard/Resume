@@ -5,29 +5,37 @@
 
 body {
     background-color: #0D1821;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-    color: #1650cc;
+    color: #167acc;
 }
 
 a:hover {
     text-decoration: none;
 }
 
-/* Profile */
-
-h1 {
-    color: #9C50F8;
-    font-size: 100px;
-}
-
 h2 {
     color: #D0ABA0;
 }
 
-.tagline {
+.content-wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+/* Profile */
+
+h1 {
     color: #9C50F8;
+    font-size: 5em;
+}
+
+.tagline {
+    color: #ccc;
 }
 
 /* Projects */
@@ -45,7 +53,7 @@ h2 {
  }
 
  .projects a {
-
+    color: #1640cc;
  }
  
  .projects .btn {
@@ -69,15 +77,20 @@ h2 {
 
 /* Education */
 
-/* Contact Info */
-footer {
+.education {
     background-color: #D0ABA0;
 }
 
-.contact h2 {
+.education h2 {
     color: #0D1821;
 }
 
-.contact li::marker {
+.education h3, .education p {
     color: #424242;
+}
+
+/* Contact Info */
+
+.contact li::marker {
+    color: white;
 }
