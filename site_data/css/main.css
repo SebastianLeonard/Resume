@@ -45,6 +45,9 @@ h2 {
     margin-bottom: 50px;
 }
 
+b {
+    color:#8524fc;
+}
 
 .content-wrap {
     width: 800px;
@@ -98,6 +101,7 @@ header h1 {
     color: azure;
     background-color: #9C50F8;
     text-decoration: none;
+    margin-bottom: 1em;
     padding: 8px;
     border-radius: 4px;
     display: inline-block;
