@@ -36,7 +36,7 @@ h1 {
     color: #9C50F8;
     font-size: 5em;
     font-family: 'Play', Arial, fantasy;
-    text-shadow: 2px 2px 8px #be88ff, -2px -2px 8px #8524fc;
+    text-shadow: 2px 2px 8px #88fff9, -2px -2px 8px #24fcfc;
 }
 
 h2 {
@@ -73,6 +73,56 @@ header h1 {
     clear: both;
     margin-top: 15%;
     text-align: center;
+}
+
+/* Navigation Bar */
+
+nav {
+    border: 1px solid #fff;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: inline-block;
+    text-align: left;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    padding: 15px 20px;
+    background-color: #9C50F8;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    box-shadow: 3px 3px 5px #88fff9, -3px -3px 5px #24fcfc, 3px -3px 5px #24fcfc, -3px 3px 5px #24fcfc;
+}
+
+nav ul li ul {
+    padding: 0;
+    position: absolute;
+    top: 48px;
+    left: -999999px;
+    width: 150px;
+}
+
+nav ul li ul li {
+    background-color: #9c50f8;
+    display: block;
+}
+
+nav ul li ul li:hover {
+    box-shadow: 3px 3px 5px #88fff9, -3px -3px 5px #24fcfc, 3px -3px 5px #24fcfc, -3px 3px 5px #24fcfc;
+}
+
+nav ul li:hover ul {
+    display: block;
+    left: 0px;
 }
 
 /* Projects */
