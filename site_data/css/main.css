@@ -37,10 +37,17 @@ h1 {
     font-size: 5em;
     font-family: 'Play', Arial, fantasy;
     text-shadow: 2px 2px 8px #88fff9, -2px -2px 8px #24fcfc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #0D1821;
+    width: 100%;
+    text-align: center;
 }
 
 h2 {
-    color: #D0ABA0;
+    color: #dfb5a9;
     font-family: 'Cinzel', 'Times New Roman', serif;
     margin-bottom: 50px;
 }
@@ -56,16 +63,6 @@ b {
 }
 
 /* Profile */
-  
-header h1 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #0D1821;
-    width: 100%;
-    text-align: center;
-}
 
 .tagline {
     color: #ccc;
@@ -78,17 +75,17 @@ header h1 {
 /* Navigation Bar */
 
 nav {
-    border: 1px solid #fff;
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    top: 7.45em;
+    background-color: #0D1821;
 }
 
 nav ul {
     display: inline-block;
-    text-align: left;
-    align-items: center;
-    list-style: none;
+    text-align: center;
+    list-style-type: none;
+    width: 100%;
 }
 
 nav ul li {
@@ -97,10 +94,12 @@ nav ul li {
     padding: 15px 20px;
     background-color: #9C50F8;
     cursor: pointer;
+    width: 18%;
 }
 
 nav ul li:hover {
     box-shadow: 3px 3px 5px #88fff9, -3px -3px 5px #24fcfc, 3px -3px 5px #24fcfc, -3px 3px 5px #24fcfc;
+    color:#24fcfc;
 }
 
 nav ul li ul {
@@ -108,16 +107,19 @@ nav ul li ul {
     position: absolute;
     top: 48px;
     left: -999999px;
-    width: 150px;
+    width: 100%;
 }
 
 nav ul li ul li {
     background-color: #9c50f8;
     display: block;
+    width: 100%;
 }
 
 nav ul li ul li:hover {
-    box-shadow: 3px 3px 5px #88fff9, -3px -3px 5px #24fcfc, 3px -3px 5px #24fcfc, -3px 3px 5px #24fcfc;
+   box-shadow: none;
+   text-shadow: 3px 3px 7px #88fff9, -3px -3px 7px #24fcfc, 3px -3px 7px #24fcfc, -3px 3px 7px #24fcfc;
+    color:#24fcfc;
 }
 
 nav ul li:hover ul {
@@ -181,7 +183,7 @@ nav ul li:hover ul {
 /* Education */
 
 .education {
-    background-color: #D0ABA0;
+    background-color: #dfb5a9;
 }
 
 .education h2 {
