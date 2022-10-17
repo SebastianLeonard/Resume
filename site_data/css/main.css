@@ -28,6 +28,10 @@ a:hover {
     text-decoration: none;
 }
 
+header {
+    text-align: center;
+}
+
 h1, h2 {
     margin: 0;
 }
@@ -43,7 +47,6 @@ h1 {
     right: 0;
     background-color: #0D1821;
     width: 100%;
-    text-align: center;
 }
 
 h2 {
@@ -196,6 +199,22 @@ nav ul li:hover ul {
 
 /* Contact Info */
 
+footer {
+    text-align: center;
+}
+
 .contact li::marker {
     color: white;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
 }
