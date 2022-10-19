@@ -1,0 +1,191 @@
+* {
+    font-family: 'Josefin Sans', sans-serif;    
+}
+
+body {
+    background-color: #b8ffff;
+    height: 100%;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+    color: #010b5b;
+    position: sticky;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    background-color: #5fcbec;
+    color: navy;
+    border-radius: 2rem;
+    padding: 1em;
+    width: 100px;
+    margin: 0 2rem;
+    font-size: x-large;
+}
+
+#hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/cycling-cliffside2.jpg);
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position-y: bottom;
+    text-align: center;
+    color: white;
+    padding: 12%;
+    margin-top: 25px;
+}
+
+#woods {
+    margin: 2em 2em 1em 0;
+    float: top left;
+}
+
+#shop {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin: 3rem 2rem;
+}
+
+p {
+    font-weight: 550;
+}
+
+div h2 {
+    font-size: 5em;
+}
+
+div p {
+    font-size: xx-large;
+}
+
+.default {
+    font-size: medium;
+}
+
+/* Formatting for Universal Footer elements */
+footer {
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 3rem 1rem 1rem 1rem;
+    border-top: solid rgba(67, 71, 68, 0.9);
+    flex-direction: column;
+}
+
+.social {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#brand-logo {
+    font-size: 4em;
+    text-align: center;
+}
+
+/* Home page CTA button */
+#cta {
+    padding: 20px;
+}
+
+/* Class selector for active page */
+.current {
+    background-color: rgb(42, 192, 104);
+    color: black;
+}
+
+/* Form Design */
+
+label {
+    display: block;
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+legend {
+    font-weight: bolder;
+    font-size: large;
+    color:#010b5b;
+}
+
+fieldset {
+    margin: 1em 0;
+}
+
+textarea {
+    width: 80%;
+}
+
+/* Button format */
+input.submit, .return {
+    text-decoration: none;
+    text-align: center;
+    background-color: #5fcbec;
+    color: navy;
+    border-radius: 2rem;
+    padding: 1em;
+    width: 200px;
+    margin: 0 2rem;
+}
+
+/*Centered Text for Confirmation page */
+
+.center {
+    text-align: center;
+    margin-top: 2rem;
+}
+/* Media Query for Fluid layout */
+@media screen and (max-width: 950px), print {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 0.5em 0;
+        width: 90%;
+    }
+
+    .col {
+        flex-flow: row wrap;
+        width: 25%;
+        height: 10rem;
+    }
+    
+    .default {
+        width: 5rem;
+        height: 10rem;
+        margin-right: 0;
+    }
+
+    #woods {
+        width: 95%;
+        margin: 1rem 2.5%;
+    }
+
+    #hero-image {
+        padding: 5%;
+    }
+
+    #brand-logo {
+        width: 90%;
+        margin: 0, 2.5%;
+    }
+}

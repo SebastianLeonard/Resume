@@ -28,10 +28,6 @@ a:hover {
     text-decoration: none;
 }
 
-header {
-    text-align: center;
-}
-
 h1, h2 {
     margin: 0;
 }
@@ -41,12 +37,8 @@ h1 {
     font-size: 5em;
     font-family: 'Play', Arial, fantasy;
     text-shadow: 2px 2px 8px #88fff9, -2px -2px 8px #24fcfc;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    clear: both;
     background-color: #0D1821;
-    width: 100%;
 }
 
 h2 {
@@ -72,9 +64,19 @@ b {
 }
 
 .content-wrap {
-    width: 800px;
+    max-width: 800px;
+    width: 85%;
     margin: 0 auto;
     padding: 60px 0;
+}
+
+.divider > section {
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+.divider > section:last-of-type {
+    border-bottom: none;
 }
 
 /* Profile */
@@ -84,7 +86,6 @@ b {
     font-variant: small-caps;
     clear: both;
     margin-top: 15%;
-    text-align: center;
 }
 
 /* Navigation Bar */
@@ -92,8 +93,12 @@ b {
 nav {
     position: -webkit-sticky;
     position: sticky;
-    top: 7.45em;
+    top: 0;
     background-color: #0D1821;
+}
+
+nav a {
+    text-decoration: none;
 }
 
 nav ul {
@@ -181,14 +186,7 @@ nav ul li:hover ul {
 
  .project-item {
     overflow: hidden;
-    border-bottom: 1px solid #424242;
  }
-
- .project-item img {
-    float: left;
-    margin: 20px 20px 40px;
- }
-
 
 /* Work Experience */
 
@@ -196,16 +194,14 @@ nav ul li:hover ul {
     background-color: #424242;
 }
 
-.job-item {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
-}
 
 /* Education */
 
 .education {
     background-color: #dfb5a9;
+    background-image: url(../images/pawel-czerwinski-light-unsplash.jpg);
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
 }
 
 .education h2 {
@@ -216,11 +212,9 @@ nav ul li:hover ul {
     color: #424242;
 }
 
-/* Contact Info */
 
-footer {
-    text-align: center;
-}
+
+/* Contact Info */
 
 .contact li::marker {
     color: white;
@@ -229,11 +223,69 @@ footer {
 .contact-list {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    justify-content: space-between;
 }
 
 .contact-list a {
     padding: 15px;
     display: inline-block;
+}
+
+
+/* Responsive Styles */
+
+@media screen and (min-width: 1020px) {
+    
+    .project-item img {
+        float: left;
+        margin: 20px 20px 40px;
+    }
+
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    
+    header, footer {
+        text-align: center;
+    }
+    
+    h1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    nav {
+        top: 7.45em;
+    }
+
+    .contact-list {
+        display: flex;
+        justify-content: space-between;    
+    }
+
+}
+
+@media screen and (max-width: 1019px) {
+    h1 {
+        font-size: 60px;
+        
+    }
+
+    h1, h2 {
+        line-height: 1.2;
+    }
+
+    .tagline {
+        margin-top: 5%;
+    }
+
+    .contact-list {
+        padding: 5px;
+    }
+
+
 }

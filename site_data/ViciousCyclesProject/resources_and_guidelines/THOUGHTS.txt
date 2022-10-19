@@ -1,0 +1,35 @@
+checkbox ideas:
+1. cupholder
+2. basket
+3. trike peripheral
+4. bell
+5. reflectors
+6. phone holder
+
+radio button/dropdown thoughts:
+
+bike type:
+mountain
+road
+city
+
+base paint colors:
+
+seat:
+men and women seat cushions
+
+toggle for electric
+
+textboxes:
+
+order form info (name, email, phone number, address?)
+
+textarea:
+
+extra customizations.
+
+
+
+
+POTENTIAL IDEA:
+SIZES
